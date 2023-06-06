@@ -1,7 +1,10 @@
 # GLoRA
 
+## One-for-All: Generalized LoRA for
+Parameter-Efficient Fine-tuning
+
 <div align=center>
-<img width=80% src="method.png"/>
+<img width=50% src="method.png"/>
 </div>
 
 ## Getting Started
