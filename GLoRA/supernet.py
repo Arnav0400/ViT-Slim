@@ -22,7 +22,7 @@ if __name__ == '__main__':
     set_seed(seed)
     args.best_acc = 0
     Path(args.save_path).mkdir(parents=True, exist_ok=True)
-    vit = create_model(args.model, pretrained=True)
+    vit = create_model(args.model, checkpoint_path='./ViT-B_16.npz', drop_path_rate=0.1)
     train_dl, test_dl = get_data(args.dataset)
     set_glora(vit, args.rank)
     vit.reset_classifier(get_classes_num(args.dataset))
