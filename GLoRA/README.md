@@ -1,5 +1,5 @@
 # One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning
-:pushpin: Results on LLM are coming soon; stay tuned!
+:pushpin: Results on shareGPT fine-tuned LLM are coming soon; stay tuned!
 
 This is an official PyTorch implementation of - One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning
 
@@ -11,6 +11,20 @@ Enhancing Low-Rank Adaptation (LoRA), GLoRA employs a generalized prompt module 
 <div align=center>
 <img width=50% src="method.png"/>
 </div>
+
+## Updates
+
+### June '23 : Results on LLMs
+The table below shows the performance on language tasks with pre-trained **LLaMA-7B** as the backbone and **Alpaca** dataset for finetuning. Our code is based on [Lit-LLaMA](https://github.com/Lightning-AI/lit-llama) and [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) and will be released soon. 
+
+We are now working on the **shareGPT** dataset for GLoRA-based fine-tuning. Stay Tuned!
+
+| Model           | ARC (25-s) | HellaSwag (10-s) | MMLU (5-s) | TruthfulQA (MC) (0-s) | Average |
+|-----------------|------------|------------------|------------|-----------------------|---------|
+| LLaMA-7B        | 46.6       | 75.6             | 34.2       | 34.1                  | 47.6    |
+| Falcon-7B       | 47.9       | 78.1             | 35.0       | 34.3                  | 48.8    |
+| Alpaca-LoRA-7B  | 45.5       | 75.2             | 34.4       | 38.7                  | 48.4    |
+| Alpaca-GLoRA-7B | 52.9       | 76.8             | 34.2       | 38.9                  | 50.7    |
 
 ## Getting Started
 
