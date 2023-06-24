@@ -15,7 +15,7 @@ Enhancing Low-Rank Adaptation (LoRA), GLoRA employs a generalized prompt module 
 ## Updates
 
 ### June '23 : Results on LLMs
-The table below shows the performance on language tasks with pre-trained **LLaMA-7B** as the backbone and **Alpaca** dataset for finetuning. Our code is based on [Lit-LLaMA](https://github.com/Lightning-AI/lit-llama) and [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) and will be released soon. 
+The table below shows the performance on language tasks with pre-trained **LLaMA-7B** as the backbone and **Alpaca** dataset for finetuning. Our code is based on [Lit-LLaMA](https://github.com/Lightning-AI/lit-llama) and [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) and will be released soon.
 
 We are now working on the **shareGPT** dataset for GLoRA-based fine-tuning. Stay Tuned!
 
