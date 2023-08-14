@@ -12,8 +12,12 @@ Enhancing Low-Rank Adaptation (LoRA), GLoRA employs a generalized prompt module 
 </div>
 
 ## Updates
+### August '23 : Hugging Face Model
 
-### August '23 : Results on LLMs
+We have open-sourced GLoRA fine-tuned LLaMA-7B on the hugging face hub. Note that GLoRA weights are merged into the base model. 
+
+[LLaMA-7B-GLoRA-ShareGPT](https://huggingface.co/MBZUAI-LLM/LLaMA-7B-GLoRA-ShareGPT)
+### July '23 : Results on LLMs
 The table below shows the performance on language tasks with pre-trained **LLaMA-7B** as the backbone.
 
 | Model             | ARC (25-s) | HellaSwag (10-s) | MMLU (5-s) | TruthfulQA (MC) (0-s) | Average |
