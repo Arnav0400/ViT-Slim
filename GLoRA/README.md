@@ -1,5 +1,4 @@
 # One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning
-:pushpin: Results on shareGPT fine-tuned LLM are coming soon; stay tuned!
 
 This is an official PyTorch implementation of - One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning
 
@@ -14,17 +13,19 @@ Enhancing Low-Rank Adaptation (LoRA), GLoRA employs a generalized prompt module 
 
 ## Updates
 
-### June '23 : Results on LLMs
-The table below shows the performance on language tasks with pre-trained **LLaMA-7B** as the backbone and **Alpaca** dataset for finetuning. Our code is based on [Lit-LLaMA](https://github.com/Lightning-AI/lit-llama) and [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) and will be released soon.
+### August '23 : Results on LLMs
+The table below shows the performance on language tasks with pre-trained **LLaMA-7B** as the backbone.
 
-We are now working on the **shareGPT** dataset for GLoRA-based fine-tuning. Stay Tuned!
+| Model             | ARC (25-s) | HellaSwag (10-s) | MMLU (5-s) | TruthfulQA (MC) (0-s) | Average |
+|-------------------|------------|------------------|------------|-----------------------|---------|
+| LLaMA-7B          | 51.0       | 77.8             | 35.7       | 34.3                  | 49.7    |
+| Falcon-7B         | 47.9       | 78.1             | 27.8       | 34.3                  | 47.0    |
+| Alpaca-LoRA-7B    | 53.5       | 77.3             | 33.8       | 34.8                  | 49.8    |
+| Alpaca-GLoRA-7B   | 52.9       | 78.1             | 34.5       | 37.8                  | 50.8    |
+| ShareGPT-LoRA-7B  | 51.7       | 77.9             | 36.1       | 39.2                  | 51.2    |
+| ShareGPT-GLoRA-7B | 53.2       | 77.4             | 36.2       | 43.9                  | 52.7    |
 
-| Model           | ARC (25-s) | HellaSwag (10-s) | MMLU (5-s) | TruthfulQA (MC) (0-s) | Average |
-|-----------------|------------|------------------|------------|-----------------------|---------|
-| LLaMA-7B        | 46.6       | 75.6             | 34.2       | 34.1                  | 47.6    |
-| Falcon-7B       | 47.9       | 78.1             | 35.0       | 34.3                  | 48.8    |
-| Alpaca-LoRA-7B  | 45.5       | 75.2             | 34.4       | 38.7                  | 48.4    |
-| Alpaca-GLoRA-7B | 52.9       | 76.8             | 34.2       | 38.9                  | 50.7    |
+Additionally, we have implemented GLoRA inside [huggingface/peft](https://github.com/huggingface/peft), which is available in this [fork](https://github.com/Arnav0400/peft). All the experiments in the table above are done using this implementation.
 
 ## Getting Started
 
