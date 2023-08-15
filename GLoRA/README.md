@@ -1,6 +1,6 @@
 # One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning
 
-This is an official PyTorch implementation of - One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning
+This is an official PyTorch implementation of - One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning.
 
 > [**One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning**](https://arxiv.org/abs//2306.07967)<br>
 > [Arnav Chavan](https://sites.google.com/view/arnavchavan/), [Zhuang Liu](https://liuzhuang13.github.io/), [Deepak Gupta](https://dkgupta90.github.io/), [Eric Xing](http://www.cs.cmu.edu/~epxing/), [Zhiqiang Shen](http://zhiqiangshen.com/)<br>MBZUAI, Transmute AI Lab, Meta, CMU
@@ -16,6 +16,7 @@ Enhancing Low-Rank Adaptation (LoRA), GLoRA employs a generalized prompt module 
 
 We have open-sourced GLoRA fine-tuned LLaMA-7B on the hugging face hub. Note that GLoRA weights are merged into the base model. 
 
+Huggingface hub link -
 [LLaMA-7B-GLoRA-ShareGPT](https://huggingface.co/MBZUAI-LLM/LLaMA-7B-GLoRA-ShareGPT)
 ### July '23 : Results on LLMs
 The table below shows the performance on language tasks with pre-trained **LLaMA-7B** as the backbone.
