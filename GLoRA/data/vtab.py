@@ -98,7 +98,7 @@ class ImageFilelist(data.Dataset):
         return len(self.imlist)
 
 
-def get_data(name, evaluate=True, batch_size=64, args=None):
+def get_data(name, evaluate=False, batch_size=64, args=None):
     if name in _VTAB_LIST:
         root = 'data/vtab-1k/' + name
         transform = transforms.Compose([
