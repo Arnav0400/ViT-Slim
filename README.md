@@ -2,9 +2,9 @@
 
 ***This is a collection of our work targeted at improving efficiency in machine learning***
 
-> [**GLoRA**](./GLoRA): **One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning**
+> [**GLoRA**](https://github.com/Arnav0400/ViT-Slim/tree/master/GLoRA): **One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning**
 
-> [**ViT-Slim**](./ViT-Slim) (```@CVPR'22```): **Vision Transformer Slimming: Multi-Dimension Searching in Continuous Optimization Space**
+> [**ViT-Slim**](https://github.com/Arnav0400/ViT-Slim/tree/master/ViT-Slim) (```@CVPR'22```): **Vision Transformer Slimming: Multi-Dimension Searching in Continuous Optimization Space**
 
 ## Bibtex
 ```bibtex
